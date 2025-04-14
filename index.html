@@ -10,45 +10,102 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <h1>Jucafé</h1>
-            <div class="logo">JUCafé</div>
-            <ul class="nav-list">
-                <li><a href="#"></a>Benefícios</li>
-                <li><a href="#"></a>Depoimentos</li>
-                <li><a href="#"></a>Franquias</li>
-            </ul>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo JUCafé">
+            <h1>JU<span id="cafe">Café</span></h1>
+        </div>
+        <nav class="nav">
+            <a href="#beneficios">Benefícios</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#franquias">Franquias</a>
         </nav>
-
-
     </header>
+
 
     <main>
 
-        <section>
-
-            <h2>Vantagens e Benefícios</h2>
-
+        <!-- Franquia -->
+        <section class="franquia">
+            <div class="franquia-image">
+                <img src="./img/banner_Dsk.png" alt="Xícara de café">
+            </div>
+            <div class="cadastro">
+                <h2>Seja nosso franqueado!</h2>
+                <p>Uma das redes que mais <strong>cresce</strong> no Brasil</p>
+                <button>Saiba mais</button>
+                <button class="btn-dstq">Registrar interesse</button>
+            </div>
         </section>
 
-        <section>
+        <!-- Benefícios e Vantagens -->
+        <section id="beneficios" class="beneficios">
+            <h2>Benefícios e Vantagens</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="./img/Increase.png" alt="Crescimento">
+                    <h4 class="rend">Um mercado em expansão!</h4>Projeção de 40% de crescimento de franchising até 2030.</p>
+                </div>
+                <div class="card">
+                    <img src="./img/Increase.png" alt="Rendimento">
+                    <h4 class="rend">Ótimos rendimentos</h4> Margem de lucro operacional superior a 30%.</p>
+                </div>
+                <div class="card">
+                    <img src="./img/Increase.png" alt="Suporte">
+                    <h4 class="rend">Suporte e Treinamento</h4> Equipe pronta para te ajudar no negócio.</p>
+                </div>
+            </div>
+        </section>
 
+        <!-- Depoimentos -->
+        <section id="depoimentos" class="depoimentos">
             <h2>Depoimentos</h2>
-
+            <div class="depoimento-box">
+                <blockquote>
+                    “Sempre gostei de café mas nunca pensei em transformar isso em um negócio, mas quando conheci a
+                    JUCafé me senti no modelo de negócio ideal para trabalhar meu futuro. Parabéns! Excelente apoio com
+                    um portfólio de serviços.”
+                    <br><br>
+                    “Meu sonho realizado e graças ao apoio da franquia realizei meu negócio construído com diálogo e
+                    confiança!”
+                </blockquote>
+                <p class="autor">Karila Kaffran<br>Franqueada – São Paulo/SP</p>
+                <div class="depoimento-img">
+                    <img src="./img/franqueado.png" alt="Franqueada">
+                </div>
+            </div>
         </section>
 
-        <section>
-
-            <h2>Modelo de Negócios</h2>
-
+        <section id="franquias" class="modelo-negocio">
+            <h2>Modelo de Negócio</h2>
+            <div class="modelos">
+                <div class="modelo">
+                    <img src="./img/modeloBistro_Dsk.png" alt="Modelo Bistrô">
+                    <h3>Modelo Bistrô</h3>
+                    <ul>
+                        <li>à partir de 25 m²</li>
+                        <li>Investimento inicial a partir de 250 mil</li>
+                        <li>Faturamento anual R$ 2,5 milhões</li>
+                    </ul>
+                </div>
+                <div class="modelo">
+                    <img src="./img/modeloQuiosque_Dsk.png" alt="Modelo Quiosque">
+                    <h3>Modelo Quisque</h3>
+                    <ul>
+                        <li>à partir de 25m²</li>
+                        <li>Investimento inicial a partir de 250 mil</li>
+                        <li>Faturamento anual de R$ 2 milhões</li>
+                    </ul>
+                </div>
+            </div>
         </section>
-
 
     </main>
 
     <footer>
-        
+
         <section class="footer__columns footer__social">
             <p class="footer__social-text">Siga nos nas redes sociais</p>
             <div class="footer__social-icons">

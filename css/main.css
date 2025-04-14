@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
+
+:root {
+    --cor-marrom: #982417;
+    --cor-preto: #000000;
+    --cor-laranja: #FF9C2D;
+    --cor-bege: #FFF0D1;
+    --cor-branco: #ffffff;
+    --cor-vermelho: #e60000; 
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color:var(--cor-branco);
+    color: var(--cor-preto);
+  }
+  
+  /* Cabeçalho */ 
+  .header {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Just Me Again Down Here', 'sans-serif';
+    background-color: var(--cor-marrom);
+    color: var(--cor-branco);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  h1 {
+      font-size: 64px;
+  }
+
+  #cafe { 
+      color: var(--cor-bege);
+  }
+
+  .header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--cor-branco);
+    font-weight: bold;
+    gap: 16px;
+  }
+
+
+
+
+   /* Franquia */
+   .franquia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+  }
+  
+  .franquia-img  {
+    width: 100%;
+  }
+  
+  .cadastro {
+    max-width: 400px;
+  }
+  
+  .cadastro h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .cadastro p {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .cadastro button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #aaa;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cadastro .btn-dstq {
+    background-color: var(--cor-laranja);
+    color: white;
+  }
+  
+  /* Vantagens e Benefícios */
+  .beneficios {
+    padding: 40px 30px;
+    background-color: #faeac2;
+  }
+  
+  .beneficios h2 {
+    color: #972a1c;
+    margin-bottom: 20px;
+  }
+  
+  .cards {
+    justify-content: space-around;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 240px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 400px;
+  }
+
+  .card p {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .rend {
+    font-weight: bold;
+    color: var(--cor-marrom);
+}
+  
+  .card img {
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  
+  /* Depoimentos */
+  .depoimentos {
+    background-color: #111;
+    color: white;
+    padding: 40px 30px;
+  }
+  
+  .depoimentos h2 {
+    margin-bottom: 20px;
+  }
+  
+  .depoimento-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  
+  .depoimento-box blockquote {
+    font-style: italic;
+    max-width: 600px;
+  }
+  
+  .autor {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .depoimento-img img {
+    max-width: 200px;
+    border-radius: 10px;
+  }
+  
+  /* Modelos de negócio */
+  .modelo-negocio {
+    padding: 40px 30px;
+    background-color: white;
+  }
+  
+  .modelo-negocio h2 {
+    color: var(--cor-marrom);
+    margin-bottom: 20px;
+  }
+  
+  .modelos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .modelo {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    min-width: 250px;
+  }
+  
+  .modelo img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .modelo h3 {
+    color: var(--cor-marrom);
+    margin-bottom: 10px;
+  }
+  
+  /* Rodapé */
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* -------------------- */
+/* RESPONSIVO: até 768px (tablets e celulares) */
+/* -------------------- */
+@media (max-width: 768px) {
+
+  /* Header */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Hero */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 90%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .cta {
+    max-width: 100%;
+  }
+
+  /* Benefícios */
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .rend {
+      color: var(--cor-marrom);
+  }
+
+  
+
+  /* Depoimentos */
+  .depoimento-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .depoimento-box blockquote {
+    max-width: 90%;
+  }
+
+  .depoimento-img img {
+    max-width: 150px;
+  }
+
+  /* Modelos */
+  .modelos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modelo {
+    width: 90%;
+  }
+}
