@@ -47,9 +47,10 @@
     /* imagem do logo */
     
     .header .logo img {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         margin-right: 10px;
+        margin-top: 10px;
     }
     /*  estilizaçao primeira parte h1 (JU)*/
     
@@ -180,7 +181,7 @@
     
     .beneficios h2 {
         color: #972a1c;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         font-family: 'Courier New', Courier, monospace;
         font-weight: 700;
         font-size: 32px;
@@ -242,7 +243,7 @@
     
     #depoimentos h2 {
         font-size: 24px;
-        margin-bottom: 180px;
+        margin-bottom: 60px;
         font-family: 'Courier New', Courier, monospace;
         font-weight: 700;
         font-size: 32px;
@@ -265,13 +266,13 @@
         font-size: 20px;
         line-height: 25px;
         max-width: 780px;
-        padding-bottom: 80px;
+        padding-bottom: 10px;
     }
     /* autor */
     
     .depoimento-box .autor {
         font-size: 20px;
-        margin-top: 20px;
+        margin-top: 40px;
         font-family: 'Lekton';
         font-weight: 700;
         font-size: 32px;
@@ -393,7 +394,6 @@
         display: flex;
         align-items: center;
         gap: 15px;
-        font-size: 20px;
     }
     /* Ícones sociais */
     
@@ -401,11 +401,6 @@
         color: white;
         font-size: 22px;
         margin-right: 10px;
-        transition: transform 0.3s ease;
-    }
-    
-    .footer__icons a:hover {
-        transform: scale(1.1);
     }
     /* Coluna direita */
     
@@ -413,13 +408,11 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        font-size: 20px;
         white-space: nowrap;
     }
     /* Parte de baixo (desenvolvedor) */
     
     .footer__bottom {
         text-align: center;
-        font-size: 18px;
         margin-top: 10px;
     }
