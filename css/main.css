@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Just+Me+Again+Down+Here&family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+
+
 :root {
     --cor-marrom: #982417;
     --cor-preto: #000000;
@@ -7,6 +11,8 @@
     --cor-branco: #ffffff;
     --cor-vermelho: #e60000;
 }
+
+
 
 * {
     margin: 0;
@@ -22,7 +28,10 @@ body {
 }
 
 
-/* Cabeçalho */
+
+
+
+/*                                  Cabeçalho                           */
 
 .header {
     display: flex;
@@ -35,102 +44,129 @@ body {
     justify-content: space-between;
 }
 
+
+/* div do logo + h1 */
 .header .logo {
     display: flex;
     align-items: center;
+    gap: 8px;
 }
 
+/* imagem do logo */
 .header .logo img {
     width: 40px;
     height: 40px;
     margin-right: 10px;
 }
-
+/*  estilizaçao primeira parte h1 (JU)*/
 h1 {
     font-size: 64px;
+    font-weight: 400;
 }
 
+/* estilizaçao segunda parte do h1 (CAFÉ)*/
 #cafe {
     color: var(--cor-bege);
 }
 
+/* estilizaçao dos links nav (há coisas mal feitas, mas ta funcionando*/
 .header nav a {
     margin-left: 20px;
     text-decoration: none;
     color: var(--cor-branco);
-    font-weight: bold;
-    gap: 16px;
+    font-weight: 400;
+    font-size: 40px;
 }
 
 
-/* Franquia */
 
-.franquia {
+
+
+
+/*                                     Franquia                              */
+
+
+/* Section da franquia completa */
+.franquia {  
     position: relative;
     width: 100%;
     max-width: 100%;
     overflow: hidden;
 }
-
+/* imagem de fundo da franquia */
 .franquia-image img {
     width: 100%;
     height: auto;
     display: block;
 }
 
+/* cadastro sobreposto a imagem franquia(funcionou com dica do gpt, mas precisa de revisao pq nao parece bem feito) */
 .cadastro {
     position: absolute;
     top: 40%;
-    left: 70%;
+    left: 60%;
     background-color: white;
     opacity: 0.85;
     max-width: 100%;
-    box-shadow: 0 5px 15px black 0.9;
+    opacity: 0.7;
     text-align: center;
-    width: 35%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    width: 40%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
     border: 3px solid var(--cor-marrom);
 }
 
+
+/* titulo do campo cadastro */
 .cadastro h2 {
-    font-size: 24px;
-    font-weight: bold;
+    font-family: 'Lekton';
+    font-size: 40px;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
+/* texto do campo parágrafo */
 .cadastro p {
-    font-size: 16px;
+    text-align: center;
+    font-family: 'Inria sans';
+    font-size: 28px;
+    font-weight: 400;
     margin-bottom: 20px;
+    line-height: 100%;
 }
 
+/* estilizaçao de um pedaço do paragrafo */
 .cadastro p strong {
     color: #d13f1a;
 }
 
+
+/*  botao registrar interesse */
 .btn-dstq {
-    padding: 10px 15px;
+    padding: 8px 16px 8px 16px;
     margin: 5px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
     background-color: orange;
     transition: background-color 0.3s ease;
-}
-
-.btn-sb {
-    margin: px;
-    padding: 10px 15px;
-    cursor: pointer;
-    transition: background-color 0.9s ease;
-    border-radius: 5px;
-    border-color: orange;
-}
-
-.btn-dstq {
     color: #fff;
     font-weight: bold;
+    
 }
+/* botao saiba mais */
+.btn-sb {
+    margin: px;
+    padding: 8px 16px 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.9s ease;
+    border-radius: 6px;
+    border-color: orange;
+    width: 108px;
+    height: 35px;
+}
+
 
 .cadastro .btn-dstq:hover {
     background-color: #ccc;
@@ -142,25 +178,40 @@ h1 {
 }
 
 
-/* Vantagens e Benefícios */
 
+
+
+/*                                  Vantagens e Benefícios                            */
+
+
+/* section completa */
 .beneficios {
     padding: 40px 30px;
     background-color: #faeac2;
 }
 
+/* cabeçalho da section */
 .beneficios h2 {
     color: #972a1c;
     margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 32px;
+    border-left: 10px solid var(--cor-marrom);
+    padding-left: 10px;
+    
 }
 
+/* divs dos 3 blocos (com certa responsividade(n lembro pq fiz))*/
 .cards {
     justify-content: space-around;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    text-align: center;
 }
 
+/* div de cada bloco */
 .card {
     background-color: white;
     padding: 20px;
@@ -168,16 +219,25 @@ h1 {
     text-align: center;
     min-width: 240px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    width: 300px;
 }
 
+
+/* quebra do texto dos cards(responsividade q n lembro pq fiz tb)*/
 .card p {
+    font-family: 'Inria sans';
+    font-weight: 400;
+    font-size: 16px;
     display: flex;
     flex-wrap: wrap;
 }
 
+
+/* h4 dos cards */
 .rend {
-    font-weight: bold;
+    font-family: 'Inria Sans';
+    font-weight: 700;
+    font-size: 16px;
     color: var(--cor-marrom);
 }
 
@@ -189,39 +249,88 @@ h1 {
 
 /* Depoimentos */
 
-.depoimentos {
-    background-color: #111;
-    color: white;
-    padding: 40px 30px;
+
+/* Section de depoimentos */
+#depoimentos {
+    padding: 60px 40px;
+    background-color: black;
+    color: white; 
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.depoimentos h2 {
-    margin-bottom: 20px;
+/* Título da seção */
+#depoimentos h2 {
+    font-size: 24px;
+    margin-bottom: 180px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 32px;
+    border-left: 10px solid white;
+    padding-left: 10px;
 }
 
+/* bloco completo depoimento+ img*/
 .depoimento-box {
     display: flex;
-    align-items: flex-start;
-    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
+/* bloco do texto depoimento */
 .depoimento-box blockquote {
+    font-family: 'Inria Sans';
+    font-weight: 400;
     font-style: italic;
-    max-width: 600px;
+    font-size: 20px;
+    line-height: 25px;
+    max-width: 780px;
+    padding-bottom: 80px;
 }
 
-.autor {
+/* autor */
+.depoimento-box .autor {
+    font-size: 20px;
     margin-top: 20px;
-    font-weight: bold;
+    font-family: 'Lekton';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    padding-bottom: 10px;
 }
 
+/* last of type significa o ultimo do bloco */
+.depoimento-box p:last-of-type {
+    font-family: 'Inria Sans';
+    font-weight: 400;
+    line-height: 100%;
+    font-size: 16px;
+    color: white;
+    
+}
+
+/* bloco do depoimento + autor + local */
+#depoimento-bloco-text {
+    margin-left: 20px;
+}
+
+/* Estilizaçao bloco da imagem */
+.depoimento-img {
+    border: 1px solid white;
+    padding: 32px;
+    max-width: 30%;
+    height: auto;
+}
+/* imagem em si */
 .depoimento-img img {
-    max-width: 200px;
-    border-radius: 10px;
+   max-width: 100%;
+    max-height: auto;
 }
 
 
-/* Modelos de negócio */
+
+
+/*                      Modelos de negócio                      */
+
 
 .modelo-negocio {
     padding: 40px 30px;
@@ -231,36 +340,126 @@ h1 {
 .modelo-negocio h2 {
     color: var(--cor-marrom);
     margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 32px;
+    border-left: 10px solid var(--cor-marrom);
+    padding-left: 10px;
 }
+
 
 .modelos {
     display: flex;
-    gap: 20px;
     flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
 }
 
 .modelo {
-    flex: 1;
     background-color: white;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    min-width: 250px;
+    text-align: left;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+    width: 40%;
 }
 
 .modelo img {
     width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
+    height: auto;
+    display: block;
+
 }
 
 .modelo h3 {
-    color: var(--cor-marrom);
-    margin-bottom: 10px;
+    color: white;
+    background-color: var(--cor-marrom);
+    padding: 10px;
+    font-family: 'Lekton';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    text-align: center;
 }
+
+.modelo ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.modelo ul li {
+    font-family: 'Inria Sans';
+    font-weight: 400;
+    font-size: 20px;
+    padding: 5px;
+}  
+
+
+
+
+/*                          FOOTER                            */
+footer {
+    background-color: #8b1e10;
+    color: white;
+    font-family: 'Just Me Again Down Here';
+    font-weight: 400;
+    font-size: 24px;
+    padding: 20px 400px;
+  }
+  
+  /* Parte de cima com ícones + telefone */
+  .footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+  
+  /* Coluna esquerda */
+  .footer__social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+  }
+  
+  /* Ícones sociais */
+  .footer__icons a {
+    color: white;
+    font-size: 22px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer__icons a:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Coluna direita */
+  .footer__contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    white-space: nowrap;
+  }
+  
+  /* Parte de baixo (desenvolvedor) */
+  .footer__bottom {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+
+
+
+
+ 
+
+
 
 
 /* Rodapé */
@@ -268,5 +467,3 @@ h1 {
 
 /* -------------------- */
 
-
-/* RESPONSIVO: até 768px (tablets e celulares) */
