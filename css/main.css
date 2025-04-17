@@ -13,19 +13,13 @@
     * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
     }
     
     html {
         scroll-behavior: smooth;
     }
     
-    body {
-        font-family: 'Segoe UI', sans-serif;
-        line-height: 1.6;
-        background-color: var(--cor-branco);
-        color: var(--cor-preto);
-    }
+ 
     /*                                  Cabeçalho                           */
     
     .header {
@@ -78,12 +72,13 @@
         font-size: 255%;
         border-bottom: 5px solid;
     }
+
+    
     /*                                     Franquia                              */
     /* Section da franquia completa */
     
     .franquia {
         position: relative;
-        width: 100%;
         max-width: 100%;
         overflow: hidden;
     }
@@ -182,7 +177,7 @@
     .beneficios h2 {
         color: #972a1c;
         margin-bottom: 10px;
-        font-family: 'Courier New', Courier, monospace;
+        font-family: 'Lekton';
         font-weight: 700;
         font-size: 32px;
         border-left: 10px solid var(--cor-marrom);
@@ -244,7 +239,7 @@
     #depoimentos h2 {
         font-size: 24px;
         margin-bottom: 60px;
-        font-family: 'Courier New', Courier, monospace;
+        font-family: 'Lekton';
         font-weight: 700;
         font-size: 32px;
         border-left: 10px solid white;
@@ -317,7 +312,7 @@
     .modelo-negocio h2 {
         color: var(--cor-marrom);
         margin-bottom: 20px;
-        font-family: 'Courier New', Courier, monospace;
+        font-family: 'Lekton';
         font-weight: 700;
         font-size: 32px;
         border-left: 10px solid var(--cor-marrom);
